@@ -8,13 +8,37 @@
         "npmPublish": false,
         "tarballDir": "dist"
       }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "docs/CHANGELOG.md"
+      }
+    ],
+    "@semantic-release/github",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "package.json",
+          "pnpm-lock.yaml",
+          "docs/CHANGELOG.md"
+        ]
+      }
     ]
   ],
   "branches": [
+    "+([0-9])?(.{+([0-9]),x}).x",
     "master",
+    "main",
     "next",
+    "next-major",
     {
       "name": "beta",
+      "prerelease": true
+    },
+    {
+      "name": "alpha",
       "prerelease": true
     }
   ]
