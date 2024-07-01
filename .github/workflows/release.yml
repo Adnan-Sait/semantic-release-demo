@@ -1,8 +1,18 @@
 name: Release
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+      tags:
+        description: "Test scenario tags"
   push:
     branches:
-      - master # or main
+      - main
+      - alpha
+      - beta
 
 permissions:
   contents: read # for checkout
