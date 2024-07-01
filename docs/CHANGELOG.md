@@ -1,3 +1,10 @@
+# [1.2.0-beta.1](https://github.com/Adnan-Sait/semantic-release-demo/compare/v1.1.0...v1.2.0-beta.1) (2024-07-01)
+
+
+### Features
+
+* 🎸 Beta features added ([3b6b934](https://github.com/Adnan-Sait/semantic-release-demo/commit/3b6b934922fefa93a770d75e1a8dab2be6766aec))
+
 # [1.1.0](https://github.com/Adnan-Sait/semantic-release-demo/compare/v1.0.0...v1.1.0) (2024-07-01)
 
 
